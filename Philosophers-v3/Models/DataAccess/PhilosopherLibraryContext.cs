@@ -6,7 +6,7 @@ using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using Philosophers_v3.Models.Entities;
 
-namespace Philosophers_v3.Models.DataAccess;
+namespace Philosophers_v3.Models.DataAccess
 {
     public class PhilosopherLibraryContext : DbContext
     {
