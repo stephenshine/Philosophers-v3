@@ -1,0 +1,82 @@
+﻿@model Philosophers_v3.Models.Entities.Philosopher
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Philosopher</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Area.AreaName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Area.AreaName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nationality.NationalityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nationality.NationalityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FistName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FistName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfDeath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfDeath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAlive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsAlive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
